@@ -92,4 +92,7 @@ p{
     .conteudo {
         margin: 20px;
     }
+    body {
+        background-image: url('../images/bg-mb.png');
+    }
 }
