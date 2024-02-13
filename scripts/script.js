@@ -18,7 +18,7 @@ let frases = [
     "Se você pudesse escolher duas pessoas famosas para jantar, com quem seriam?",
     "Se você pudesse renomear a si mesmo, que nome escolheria?",
     "Se você tivesse que dar uma aula sobre uma coisa, o que você ensinaria?",
-    "Se você pudesse ter o poder de teletransporte agora, para onde iria e por quê?",
+    "Se você pudesse se teletransportar agora, para onde iria e por quê?",
     "Você prefere voltar no tempo ou ir ao futuro? por quê?",
     "Você prefere invisibilidade ou vôo?",
     "Se você pudesse doar um milhão de dólares, que causa você escolheria?",

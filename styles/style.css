@@ -13,86 +13,71 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px; /* Reduzi a margem para telas menores */
+    margin: 30px 50px;
 }
-
 .conteudo{
-    width: 90%; /* Ajuste a largura para 90% em telas menores */
-    max-width: 600px; /* Limita a largura máxima em telas maiores */
-    height: auto; /* Alterado para altura automática */
+    width: 60%;
+    height: 400px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     border: 5px solid #e65314;
     box-shadow: 0px 4px 30px 0px #8d320b;
-    padding: 10px; /* Corrigi a sintaxe da propriedade padding */
+    padding: 05px 10px 10px 10px;
 }
-
 .card-bg{
-    width: 100%;
-    padding: 20px;
+    width: 95%;
+    height: 350px;
+    padding: 20px 20px 20px 20px;
     border-radius: 21px;
     background: #f55410;
+    flex-shrink: 0;
     border-bottom: 13px solid  #e64c0a;
     text-align: center;
 }
-
 p{
     font-family: 'Prompt', sans-serif;
     color: #ffffff;
-    font-size: 6vw; /* Alterado para unidade de viewport width para ajustar o tamanho do texto */
+    font-size: 90px;
+    font-style: normal;
     font-weight: 1000;
+    line-height: normal;
     letter-spacing: 1.6px;
-    margin-bottom: 10px; /* Adicionado espaçamento inferior */
 }
-
 .frase{
     font-family: 'Prompt', sans-serif;
     color: #ffffff;
-    font-size: 3vw; /* Alterado para unidade de viewport width para ajustar o tamanho do texto */
+    font-size: 20px;
+    font-style: normal;
     font-weight: 1000;
+    line-height: normal;
     letter-spacing: 1.6px;
-    margin-bottom: 20px; /* Adicionado espaçamento inferior */
 }
-
 #imagem{
-    width: 100%;
-    height: auto; /* Alterado para altura automática */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    width: 70%;
+    height: 80%;
     padding-top: 20px;
+    
 }
-
 #botao{
-    width: 40%; /* Ajuste a largura para 40% em telas menores */
-    max-width: 200px; /* Limita a largura máxima em telas maiores */
-    height: auto; /* Alterado para altura automática */
+    width: 118px;
+    height: 48px;
     background-image: url('../images/play_btn.png');
     background-size: cover;
     font-family: 'Prompt', sans-serif;
-    margin-top: 20px; /* Reduzi a margem superior para telas menores */
+    margin-top: 40px;
     border: 3px solid #FFFEFF;
     border-radius: 33px;
-    font-size: 4vw; /* Alterado para unidade de viewport width para ajustar o tamanho do texto */
+    font-size: 20px;
     font-weight: bold;
     color: #FFFEFF;
     cursor: pointer;
     transition: 0.3s;
 }
-
 #botao:hover{
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #A6F208;
-}
-
-/* Adicionando regras de mídia queries para ajustar o layout em telas menores */
-
-@media screen and (max-width: 600px) {
-    .conteudo {
-        margin: 20px;
-    }
-    body {
-        background-image: url('../images/bg-mb.png');
-    }
 }
