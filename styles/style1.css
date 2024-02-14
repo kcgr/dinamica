@@ -6,6 +6,14 @@
 
 :root{
   --bg-url: url(../images/bg-mb.png);
+  --width-mb: 500px;
+  --height-mb: 350px;
+  --width-pc: 730px;
+  --height-pc: 460px;
+  --font-pc: 20px;
+  --font-mb: 2.5vw;
+  --font-p-mb: 10vw;
+  --font-p-pc: 6vw;
 }
 body {
   background: var(--bg-url);
@@ -26,8 +34,8 @@ body * {
   color: var(--text-color);
 }
 .conteudo{
-  width: 730px;
-  height: 460px;
+  width: var(--width-mb);
+  height: var(--height-mb);
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -37,7 +45,7 @@ body * {
   box-shadow: 0px 4px 28px 0px #8d320b;
   padding: 10px 10px 10px 10px;
   position: relative;
-  bottom: 38px;
+  bottom: 40px;
 }
 .card-bg{
   width: 95%;
@@ -52,7 +60,7 @@ body * {
 p{
   font-family: 'Prompt', sans-serif;
   color: #ffffff;
-  font-size: 7vw;
+  font-size: var(--font-p-mb);
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
@@ -61,7 +69,7 @@ p{
 .frase{
   font-family: 'Prompt', sans-serif;
   color: #ffffff;
-  font-size: 20px;
+  font-size: var(--font-mb);
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
@@ -96,16 +104,27 @@ p{
 }
 /* media queries */
 @media (min-width: 700px) {
-    :root {
-      --bg-url: url(../images/bg2.png);
-    }
+  :root{
+    --bg-url: url(../images/bg-pc.png);
+    --width-pc: 730px;
+    --height-pc: 460px;
+  }
+  .conteudo{
+    width: var(--width-pc);
+    height: var(--height-pc);
+  }
+  .frase{
+    font-size: var(--font-pc);
+  }
+  p{
+    font-size: var(--font-p-pc);
+  }
 }
-
-@media(height: 1368px){
+@media (height: 1368px){
   body {
   background: var(--bg-url) center/cover;
   height: 100vh;
 }
-
 }
+
 
